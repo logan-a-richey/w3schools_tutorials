@@ -1,0 +1,25 @@
+### TODO
+09.py and onwards
+
+### Python Vanilla Tutorial
+#   Basic stuff
+#   File Handling
+
+### Python Modules
+#   NumPy 
+#   Pandas
+#   SciPy
+#   Django
+
+### Matplotlib
+
+### Machine Learning
+
+### MySQL
+
+### MongoDB
+
+### Python Reference
+
+### Python Module Reference
+
