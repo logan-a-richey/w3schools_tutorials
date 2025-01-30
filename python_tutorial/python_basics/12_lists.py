@@ -58,7 +58,7 @@ def list_looping() -> None:
     
     print("List comprehension:")
     print("{}".format(
-        " ".join([str(num*10) for num in nums])
+        " ".join([str(num*10) for num in numbers])
     ))
 
 def list_comprehension() -> None:
