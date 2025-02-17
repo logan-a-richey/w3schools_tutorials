@@ -29,4 +29,3 @@ import numpy as np
 
 print("Numpy version: {}".format(np.__version__))
 
-

@@ -1,32 +1,42 @@
 #!/usr/bin/env python3
 # 15_array_filter.py
 
-def main() -> None:
-    # Filtering Arrays
-    # Getting some elements out of an existing array and creating a new array out of them is called filtering.
-    # In NumPy, you filter an array using a boolean index list.
-    # A boolean index list is a list of booleans corresponding to indexes in the array.
+import numpy as np
+from tester import Tester
 
-    # If the value at an index is True that element is contained in the 
-    # filtered array, if the value at that index is False that element is excluded from the filtered array.
+def ex01():
+    '''
+    Filtering Arrays
+    Getting some elements out of an existing array and creating a new array out of them is called filtering.
+    In NumPy, you filter an array using a boolean index list.
+    A boolean index list is a list of booleans corresponding to indexes in the array.
 
-    # Example Create an array from the elements on index 0 and 2:
+    If the value at an index is True that element is contained in the 
+    filtered array, if the value at that index is False that element is excluded from the filtered array.
+
+    Example Create an array from the elements on index 0 and 2:
+    '''
     arr = np.array([41, 42, 43, 44])
     x = [True, False, True, False]
     newarr = arr[x]
     print(newarr)
 
-    # The example above will return [41, 43], why?
-    # Because the new array contains only the values where the filter array had
-    # the value True, in this case, index 0 and 2.
+    print(
+        "The example above will return [41, 43], why?\n"\
+        "Because the new array contains only the values where the filter array had\n"\
+        "the value True, in this case, index 0 and 2."
+    )
 
-    # Creating the Filter Array
-    # In the example above we hard-coded the True and False values, but the
-    # common use is to create a filter array based on conditions.
+def ex02():
+    '''
+    Creating the Filter Array
+    In the example above we hard-coded the True and False values, but the
+    common use is to create a filter array based on conditions.
 
-    # Example: Create a filter array that will return only values higher than 42:
+    Example: Create a filter array that will return only values higher than 42:
+    '''
     arr = np.array([41, 42, 43, 44])
-
+    
     # Create an empty list
     filter_arr = []
 
@@ -40,10 +50,14 @@ def main() -> None:
 
     newarr = arr[filter_arr]
 
-    print(filter_arr)
-    print(newarr)
+    print("arr = ", arr)
+    print("filter_arr = ", filter_arr)
+    print("newarr = " newarr)
 
-    # Example: Create a filter array that will return only even elements from the original array:
+def ex03():
+    '''
+    Example: Create a filter array that will return only even elements from the original array:
+    '''
     arr = np.array([1, 2, 3, 4, 5, 6, 7])
 
     # Create an empty list
@@ -57,27 +71,39 @@ def main() -> None:
         else:
             filter_arr.append(False)
     newarr = arr[filter_arr]
-    print(filter_arr)
-    print(newarr)
 
-    # Creating Filter Directly From Array
-    # The above example is quite a common task in NumPy and NumPy provides a nice way to tackle it.
+    print("arr = ", arr)
+    print("filter_arr = ", filter_arr)
+    print("newarr = " newarr)
 
-    # We can directly substitute the array instead of the iterable variable in our condition and it will work just as we expect it to.
+def ex04():
+    '''
+    Creating Filter Directly From Array
+    The above example is quite a common task in NumPy and NumPy provides a nice way to tackle it.
+    We can directly substitute the array instead of the iterable variable in our condition and it will work just as we expect it to.
 
-    # Example: Create a filter array that will return only values higher than 42:
+    Example: Create a filter array that will return only values higher than 42:
+    '''
     arr = np.array([41, 42, 43, 44])
     filter_arr = arr > 42
     newarr = arr[filter_arr]
     print(filter_arr)
     print(newarr)
 
-    # Example: Create a filter array that will return only even elements from the original array:
+def ex05():
+    ''' Example: Create a filter array that will return only even elements from the original array: '''
+
     arr = np.array([1, 2, 3, 4, 5, 6, 7])
     filter_arr = arr % 2 == 0
     newarr = arr[filter_arr]
     print(filter_arr)
     print(newarr)
+
+def main():
+    '''Run examples'''
+    examples = [ex01, ex02, ex03, ex04, ex05] 
+    t = Tester(examples)
+    t.run()
 
 if __name__ == "__main__":
     main()
