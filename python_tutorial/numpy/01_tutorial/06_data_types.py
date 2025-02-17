@@ -58,8 +58,8 @@ def ex03():
     ValueError: In Python ValueError is raised when the type of passed argument to a function is unexpected/incorrect.
     '''
     try:
-        arr = np.array(['a', '2', '3'], dtype='i') i
-    except Exeption as e:
+        arr = np.array(['a', '2', '3'], dtype='i')
+    except Exception as e:
         print(e)
 
 def ex04():
@@ -89,7 +89,7 @@ def ex04():
 
 def main():
     '''Run examples'''
-    examples = [ex01, ex02, ex03, ex04]i
+    examples = [ex01, ex02, ex03, ex04]
     t = Tester(examples)
     t.run()
 

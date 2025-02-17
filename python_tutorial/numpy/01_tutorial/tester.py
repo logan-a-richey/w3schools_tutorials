@@ -27,3 +27,20 @@ class Tester:
                 print("[W] Could not call Example {}".format(str(i).rjust(2, '0')))
 
 
+def myfunc1():
+    ''' myfunc1 doc '''
+    print("Hello there!")
+
+def myfunc2():
+    ''' myfunc2 doc '''
+    print("General Kenobi...")
+
+def main():
+    ''' Usage '''
+    examples = [ex01, ex02]
+    t = Tester(examples)
+    t.run()
+
+if __name__ == "__main__":
+    main()
+

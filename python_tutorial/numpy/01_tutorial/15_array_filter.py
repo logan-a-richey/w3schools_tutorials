@@ -22,9 +22,9 @@ def ex01():
     print(newarr)
 
     print(
-        "The example above will return [41, 43], why?\n"\
-        "Because the new array contains only the values where the filter array had\n"\
-        "the value True, in this case, index 0 and 2."
+        f"The example above will return [41, 43], why?\n"\
+        f"Because the new array contains only the values where the filter array had\n"\
+        f"the value True, in this case, index 0 and 2."
     )
 
 def ex02():
@@ -52,7 +52,7 @@ def ex02():
 
     print("arr = ", arr)
     print("filter_arr = ", filter_arr)
-    print("newarr = " newarr)
+    print("newarr = ", newarr)
 
 def ex03():
     '''
@@ -74,7 +74,7 @@ def ex03():
 
     print("arr = ", arr)
     print("filter_arr = ", filter_arr)
-    print("newarr = " newarr)
+    print("newarr = ", newarr)
 
 def ex04():
     '''
@@ -87,8 +87,10 @@ def ex04():
     arr = np.array([41, 42, 43, 44])
     filter_arr = arr > 42
     newarr = arr[filter_arr]
-    print(filter_arr)
-    print(newarr)
+
+    print("arr = ", arr)
+    print("filter_arr = ", filter_arr)
+    print("newarr = ", newarr)
 
 def ex05():
     ''' Example: Create a filter array that will return only even elements from the original array: '''
@@ -96,8 +98,10 @@ def ex05():
     arr = np.array([1, 2, 3, 4, 5, 6, 7])
     filter_arr = arr % 2 == 0
     newarr = arr[filter_arr]
-    print(filter_arr)
-    print(newarr)
+
+    print("arr = ", arr)
+    print("filter_arr = ", filter_arr)
+    print("newarr = ", newarr)
 
 def main():
     '''Run examples'''
