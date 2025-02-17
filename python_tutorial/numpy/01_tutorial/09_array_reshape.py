@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# 08_array_shape.py
+# 09_array_reshape.py
 
 import numpy as np
 from tester import Tester
