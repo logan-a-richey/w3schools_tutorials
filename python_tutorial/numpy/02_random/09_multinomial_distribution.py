@@ -5,6 +5,8 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
+
 # *** Multinomial Distribution ***
 # Multinomial distribution is a generalization of binomial distribution.
 # It describes outcomes of multi-nomial scenarios unlike binomial where 

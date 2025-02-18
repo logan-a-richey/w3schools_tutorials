@@ -5,6 +5,7 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
 
 # *** Uniform Distribution ***
 # Used to describe probability where every event has equal chances of occuring.

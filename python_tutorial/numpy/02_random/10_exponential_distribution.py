@@ -5,6 +5,8 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
+
 # Exponential Distribution
 # Exponential distribution is used for describing time till next event 
 # e.g. failure/success etc.
@@ -17,7 +19,7 @@ def ex01():
     '''
     Example: Draw out a sample for exponential distribution with 2.0 scale with 2x3 size:
     '''
-    x = random.exponential(scale=2, size=(2, 3))i
+    x = random.exponential(scale=2, size=(2, 3))
     print(x)
 
 def ex02():

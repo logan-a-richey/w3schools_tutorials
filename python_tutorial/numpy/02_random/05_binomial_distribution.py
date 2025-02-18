@@ -5,6 +5,7 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
 
 # *** Binomial Distribution ***
 # Binomial Distribution is a Discrete Distribution.

@@ -5,6 +5,8 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
+
 # *** Rayleigh Distribution ***
 # Rayleigh distribution is used in signal processing.
 #

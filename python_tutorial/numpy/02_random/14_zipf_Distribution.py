@@ -5,6 +5,8 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
+
 # *** Zipf Distrubition ***
 # Zipf distributions are used to sample data based on zipf's law.
 # "In a collection, the nth common term is 1/n times of the most common term"

@@ -5,6 +5,8 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
+
 # *** Chi Square Distribution ***
 # Chi Square distribution is used as a basis to verify the hypothesis.
 #

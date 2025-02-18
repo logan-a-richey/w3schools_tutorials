@@ -5,6 +5,8 @@ from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from tester import Tester
+
 # *** Pareto Distribution ***
 # A distribution following Pareto's law i.e. 80-20 distribution (20% factors cause 80% outcome).
 #
